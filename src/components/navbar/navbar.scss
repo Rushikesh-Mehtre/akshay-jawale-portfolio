@@ -1,0 +1,135 @@
+.navbar-cross {
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0a3d62 0%, #3c6382 100%);
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.navbar-logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+}
+
+.navbar-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-designation {
+  font-size: 1rem;
+  color: #dff9fb;
+}
+
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+// Hamburger styles
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.navbar-hamburger .bar.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar-hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+.navbar-hamburger .bar.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: linear-gradient(90deg, #0a3d62 0%, #3c6382 100%);
+    flex-direction: column;
+    gap: 0;
+    width: 220px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+    padding: 1rem 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    z-index: 1000;
+  }
+  .navbar-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar-link {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 1.1rem;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #f6e58d;
+}
