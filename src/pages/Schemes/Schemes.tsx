@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUser, FaUsers, FaMoneyCheckAlt, FaIdCard, FaCertificate, FaRegAddressCard } from 'react-icons/fa';
+import { FaUser, FaUsers, FaMoneyCheckAlt,FaRegAddressCard } from 'react-icons/fa';
 import './Schemes.scss';
 
 const Schemes: React.FC = () => (
