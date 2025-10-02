@@ -1,10 +1,10 @@
 import React from 'react';
-
+import './Home.scss';
 const Home: React.FC = () => (
-  <main>
-    <h1>Welcome to the District Revenue Office</h1>
-    <p>This is the dashboard. Quick access to all services and information.</p>
-  </main>
+    <div className='home-section'>
+    <h1>ग्राम महसूल कार्यालयात आपले स्वागत</h1>
+    <p>सर्व सेवा आणि माहितीसाठी मुख्य पृष्ठ</p>
+  </div>
 );
 
 export default Home;

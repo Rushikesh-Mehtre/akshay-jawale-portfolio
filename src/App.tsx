@@ -8,9 +8,9 @@ import Documents from './pages/Documents/Documents';
 import VillageInfo from './pages/VillageInfo/VillageInfo';
 import Schemes from './pages/Schemes/Schemes';
 import Contact from './pages/Contact/Contact';
+import FarmerIdInfo from './pages/FarmerIdInfo/FarmerIdInfo';
 
 import Navbar from './components/navbar/navbar';
-import Footer from './components/footer/footer';
 
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
         <Route path="/village-info" element={<VillageInfo />} />
         <Route path="/schemes" element={<Schemes />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/farmer-id" element={<FarmerIdInfo />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

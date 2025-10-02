@@ -1,15 +1,15 @@
 import React from 'react';
-
+import './Services.scss';
 const Services: React.FC = () => (
-  <section>
-    <h2>Services Offered</h2>
+  <div className='services-section'>
+    <h2>उपलब्ध सेवा</h2>
     <ul>
-      <li>Land Record Issuance</li>
-      <li>Mutation of Land</li>
-      <li>Income Certificate</li>
-      <li>Domicile Certificate</li>
+      <li>जमीन रेकॉर्ड जारी करणे</li>
+      <li>जमीन उत्परिवर्तन</li>
+      <li>उत्पन्न प्रमाणपत्र</li>
+      <li>रहिवासी प्रमाणपत्र</li>
     </ul>
-  </section>
+  </div>
 );
 
 export default Services;

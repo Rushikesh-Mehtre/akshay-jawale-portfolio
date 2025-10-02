@@ -1,8 +1,11 @@
-section {
+.villageinfo-section {
   padding: 2rem;
+  padding-top: 100px;
   background: #f5f6fa;
   min-height: 70vh;
 }
+
+
 h2 {
   color: #3c6382;
   font-size: 1.7rem;
@@ -11,4 +14,10 @@ h2 {
 p {
   font-size: 1.1rem;
   color: #222f3e;
+}
+@media (max-width: 700px) {
+  .villageinfo-section {
+    padding: 1rem 1rem;
+    padding-top: 260px;
+  }
 }

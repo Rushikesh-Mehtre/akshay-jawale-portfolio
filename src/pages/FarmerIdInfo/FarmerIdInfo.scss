@@ -1,4 +1,4 @@
-.documents-section {
+.farmer-id-section {
   padding: 2rem;
   padding-top: 100px;
   background: #f5f6fa;
@@ -15,7 +15,7 @@ h2 {
   text-align: center;
 }
 
-.document-card {
+.farmer-id-card {
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
@@ -28,9 +28,9 @@ h2 {
   max-width: 700px;
 }
 
-.document-icon {
+.farmer-icon {
   font-size: 2.2rem;
-  color: #0a3d62;
+  color: #27ae60;
   min-width: 2.2rem;
 }
 
@@ -44,40 +44,56 @@ p {
   font-size: 1rem;
   color: #222f3e;
   margin: 0.2rem 0;
+  line-height: 1.6;
 }
 
-ul {
-  list-style: disc inside;
+ul, ol {
   font-size: 1rem;
   color: #222f3e;
   margin: 0.5rem 0;
+  padding-left: 1.2rem;
 }
 
 li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
 }
+
+ol li {
+  margin-bottom: 0.6rem;
+}
+
+strong {
+  color: #2c3e50;
+}
+
 @media (max-width: 700px) {
-  .documents-section {
+  .farmer-id-section {
     padding: 1rem 1rem;
     padding-top: 260px;
   }
-  .document-card {
+  
+  .farmer-id-card {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 0.5rem;
     max-width: 98vw;
   }
-  .document-icon {
+  
+  .farmer-icon {
     font-size: 1.7rem;
     margin-bottom: 0.5rem;
   }
+  
   h2 {
     font-size: 1.3rem;
     margin: 1.2rem 0 0.7rem 0;
   }
+  
   h3 {
     font-size: 1rem;
   }
+  
   p, li {
     font-size: 0.95rem;
   }

@@ -1,8 +1,11 @@
-section {
+.services-section {
   padding: 2rem;
+  padding-top: 100px;
   background: #f5f6fa;
   min-height: 70vh;
 }
+
+
 h2 {
   color: #3c6382;
   font-size: 1.7rem;
@@ -15,4 +18,11 @@ ul {
 }
 li {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .services-section {
+    padding: 1rem 1rem;
+    padding-top: 240px;
+  }
 }
